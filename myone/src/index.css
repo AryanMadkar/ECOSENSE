@@ -2,28 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
-  font-family: "poppins",sans-serif;
+body {
+  font-family: "poppins", sans-serif;
 }
-.sea{
+.sea {
   margin-top: 0.3rem;
   font-size: x-large;
   font-weight: 600;
 }
-.sea:hover{
+.sea:hover {
   color: #f7008a;
   text-decoration: underline;
   transition: color 0.3s ease;
   cursor: pointer;
 }
-.rotate{
-  animation: rotate 2s infinite linear;
+.rotate {
+  animation: rotate 4s linear infinite, purpleGlow 0.8s infinite alternate;
+  filter: drop-shadow(0 0 10px #a100ff) drop-shadow(0 0 20px #c400ff)
+    drop-shadow(0 0 40px #8000ff);
 }
 @keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.thunder {
+  filter: drop-shadow(0 0 10px #00aaff) drop-shadow(0 0 20px #00ccff)
+    drop-shadow(0 0 40px #0088ff);
+  animation: thunderGlow 0.6s infinite alternate;
+}
+
+@keyframes purpleGlow {
+  0% {
+    filter: drop-shadow(0 0 5px #a100ff) drop-shadow(0 0 15px #c400ff)
+      drop-shadow(0 0 30px #8000ff);
+  }
+  100% {
+    filter: drop-shadow(0 0 15px #a100ff) drop-shadow(0 0 30px #c400ff)
+      drop-shadow(0 0 40px #5d00b3);
+  }
+}
+
+@keyframes thunderGlow {
+  0% {
+    filter: drop-shadow(0 0 5px #00aaff) drop-shadow(0 0 15px #00ccff)
+      drop-shadow(0 0 30px #0088ff);
+  }
+  100% {
+    filter: drop-shadow(0 0 15px #00aaff) drop-shadow(0 0 30px #00ccff)
+      drop-shadow(0 0 40px #0066cc);
+  }
 }
