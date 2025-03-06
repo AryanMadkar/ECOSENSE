@@ -1,0 +1,291 @@
+/* Ensure body takes the full height */
+body {
+    background-color: rgb(193, 235, 167);
+    font: inherit !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Makes the body take up the full viewport height */
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and other sections stay as they are */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #25b12a;
+    color: white;
+    font-size: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: 175px;
+}
+
+.nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #45a049;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+/* Use flex to push footer to the bottom */
+.main-content {
+    flex-grow: 1; /* Takes up remaining space to push footer down */
+}
+
+/* Footer */
+.footer {
+    margin-top: 700px;
+    padding: 25px;
+    text-align: center;
+    background-color: #137617;
+}
+
+.footer a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.blankspacefooter {
+    padding: 25px;
+}
+
+.blankspace {
+    height: 95px;
+}
+
+/* Layout and map styles (no changes here) */
+.layout {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    background-color: white;
+    border: 5px;
+    border-radius: 10px;
+    border-color: #25b12a;
+}
+
+.map {
+    position: relative;
+}
+
+.mapimg {
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    max-width: 850px;
+    max-height: 650px;
+    object-fit: cover;
+}
+
+.lightbulb {
+    position: absolute;
+    z-index: 2;
+    color: yellow;
+    pointer-events: auto;
+    border-radius: 100%;
+    transition: box-shadow 0.4s ease;
+    box-shadow:0 0 20px 5px rgba(240, 202, 8, 0.8) ;
+    /* 1px 1px 200px 50px yellow */
+}
+
+#lightbulb1 {
+    border: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 170px;
+    margin-left: 660px;
+    pointer-events: auto;
+}
+
+#lightbulb2 {
+    border: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 170px;
+    margin-left: 793px;
+    pointer-events: auto;
+}
+
+#lightbulb3 {
+    border: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 365px;
+    margin-left: 660px;
+    pointer-events: auto;
+}
+
+#lightbulb4 {
+    border: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 365px;
+    margin-left: 793px;
+    pointer-events: auto;
+}
+
+#lightbulb5 {
+    border: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 568px;
+    margin-left: 658px;
+    pointer-events: auto;
+}
+
+#lightbulb6 {
+    border: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 568px;
+    margin-left: 793px;
+    pointer-events: auto;
+}
+
+/* Vent Button Styling */
+.Acvent {
+    height:8px;
+    width:18px;
+    padding:20px;
+    border: none; /* Remove border */
+    background: none; /* Transparent button background */
+    position: absolute;
+    z-index: 2;
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    border-radius: 100%;
+
+
+}
+
+.ventimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensure image scales properly */
+    pointer-events: none; /* Allow button click over image */
+}
+
+#vent1 {
+    border: 2px;
+    padding: 0;
+    margin-top: 208px;
+    margin-left: 727px;
+}
+#vent2 {
+    border: 2px;
+    padding: 0;
+    margin-top:405px;
+    margin-left: 726px;
+}
+#vent3 {
+    border: 2px;
+    padding: 0;
+    margin-top: 599.5px;
+    margin-left: 727px;
+}
+
+/* Improved Popup Styling */
+.popup {
+    position: absolute;
+    z-index: 1000;
+    background: #f7f9fc;
+    border: 1px solid #dfe3e8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    animation: fade-in 0.3s ease-in-out;
+}
+
+.popup-content {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.popup h4 {
+    margin-bottom: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.popup p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.popup button {
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popup button:hover {
+    background: #c0392b;
+}
+
+/* Popup Animation */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
+}
+
+.popup.fade-in { animation: fade-in 0.3s ease-in-out; }
+.popup.fade-out { animation: fade-out 0.3s ease-in-out; }

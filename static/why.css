@@ -1,0 +1,171 @@
+body {
+    background-color: rgb(190, 246, 155);
+    font: inherit !important;
+    /* background-image: url(light-green-leaf-background-vector-pattern-seamless-repeating-texture_654662-5277.jpg);*/
+  }
+  
+  hr{
+    visibility: hidden !important;;
+  }
+  /* Reset some default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #137617; /* Green background */
+    color: white;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 175px;
+  }
+  
+  .nav {
+    display: flex;
+    margin-left: auto; /* Pushes the navigation to the right */
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
+
+  blankspace {
+    size: 100px;
+  }
+    
+
+.blog-container {
+    border: 8px solid darkgreen;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
+    overflow-wrap: break-word;
+}
+
+/* CSS for Headings */
+h1, h2, h3 {
+    color: darkgreen;
+}
+
+/* CSS for Paragraphs */
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CSS for Links */
+a {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CSS for Lists */
+ul, ol {
+    margin: 20px 0;
+    padding-left: 40px;
+    overflow-wrap: break-word;
+}
+
+/* CSS for References */
+.references {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid darkgreen;
+}
+
+/* CSS for Reference Links */
+.references a {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.references a:hover {
+    text-decoration: underline;
+}
+
+/* CSS for Case Studies */
+.case-studies {
+    margin-top: 40px;
+}
+
+.case-study-heading {
+    color: darkgreen;
+    margin-bottom: 10px;
+}
+
+.case-study {
+    margin-bottom: 20px;
+}
+
+/* CSS for Conclusion */
+.conclusion {
+    margin-top: 40px;
+}
+
+
+
+
+  .footer{
+    padding: 25px;;
+    text-align: center;
+    background-color:#137617;
+   }
+   .footer a{
+     font-size: 30px;
+     color: white;
+     text-decoration: none;
+   }

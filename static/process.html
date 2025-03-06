@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy-Efficient System Journey</title>
+  <link rel="stylesheet" href="process.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="ecosenselogo.png" alt="ecosenselogo" class="logo" />
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="data.html" class="nav-link">Data</a></li>
+        <li class="nav-item"><a href="process.html" class="nav-link">Process</a></li>
+        <li class="nav-item"><a href="why.html" class="nav-link">Why?</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <div class="blog-box">
+      <article>
+        <h1>The Journey of Our Energy-Efficient System: From Prototype to Future Developments</h1>
+
+        <section class="intro">
+          <h2>Introduction</h2>
+          <p>In our pursuit of creating an innovative energy-saving system, we embarked on a journey that began with a
+            well-planned prototype and evolved through several stages of development. This blog details the process,
+            highlighting key decisions and advancements that have shaped our project.</p>
+        </section>
+
+        <section class="prototype">
+          <h2>Initial Prototype: Laying the Groundwork</h2>
+
+          <h3>Sensor Selection</h3>
+          <p>The first critical decision in developing our prototype was the choice of sensor. We opted for a standard
+            ultrasonic sensor due to its ease of use, affordability, and high accuracy. Ultrasonic sensors are known for
+            their reliability and efficiency, making them an excellent choice for our initial testing. Their ability to
+            accurately measure distances while being cost-effective was crucial in allowing us to test our ideas without
+            significant financial investment.</p>
+          <p>For more information, visit <a href="#" class="sensor-link">Ultrasonic Sensor Info</a>.</p>
+
+          <h3>Microcontroller Choice</h3>
+          <p>For the microcontroller, we selected the Arduino UNO. This decision was based on the Arduino UNO’s
+            user-friendly coding environment, availability, and its ability to meet our current requirements. Its
+            straightforward programming interface and widespread community support made it a practical choice for
+            prototyping. The Arduino UNO allowed us to effectively manage the sensor data and control various
+            components, ensuring that we could test and refine our system efficiently.</p>
+
+          <h3>Circuit Board Design</h3>
+          <p>In our prototype, we used a standard breadboard. The decision to use a breadboard rather than soldering
+            components onto a permanent circuit board was driven by the need for flexibility during the prototyping
+            phase. A breadboard allowed us to easily modify and adjust our circuit design without the risk of permanent
+            changes. This approach facilitated quick testing and iteration, helping us identify and resolve issues
+            before committing to a final design.</p>
+
+          <h3>System Functionality</h3>
+          <p>The primary function of our prototype was to count the number of entries and exits in a room. To achieve
+            this, the ultrasonic sensors were strategically placed at doorways. The Arduino UNO processed the sensor
+            data and used it to toggle lights and fans based on the number of people detected. The system utilized high
+            and low signals to control these components, providing a basic but effective demonstration of the concept.
+          </p>
+        </section>
+
+        <section class="developments">
+          <h2>Transition to Future Developments</h2>
+
+          <h3>Advanced Sensor Selection</h3>
+          <p>For the next phase, we chose to integrate PIR (Passive Infrared) and mmWave (millimeter-wave) sensors. The
+            mmWave sensors use radio waves to measure distances, offering higher accuracy and the ability to detect
+            motion without requiring a direct line of sight. However, they are prone to false positives, which can
+            affect their reliability. On the other hand, PIR sensors, while less accurate and requiring a line of sight,
+            have very low false positive rates. By combining these two technologies, we aim to achieve a high level of
+            accuracy in detecting movement and occupancy, leveraging the strengths of each sensor type to minimize their
+            individual limitations.</p>
+          <p>For more information, visit <a href="#" class="sensor-link">PIR Sensor Info</a> and <a href="#"
+              class="sensor-link">mmWave Sensor Info</a>.</p>
+
+          <h3>Microcontroller Upgrade</h3>
+          <p>To manage the increased complexity of our system, we selected the Raspberry Pi 3 B as our microcontroller.
+            The Raspberry Pi 3 B is capable of handling a large number of modules and communicating with various
+            microcontrollers and servers. Its advanced processing power and versatility make it well-suited for managing
+            the more sophisticated requirements of our enhanced system. Additionally, we plan to incorporate ESP32
+            modules for server communication, providing robust connectivity and enabling seamless data exchange between
+            the system components and our server infrastructure.</p>
+
+          <h3>Circuit Board Enhancement</h3>
+          <p>For the circuit board, we opted for a general-purpose dotted circuit board. This choice provides the
+            flexibility to customize the circuit board layout as needed. Unlike pre-designed circuit boards, a dotted
+            circuit board allows for easy adjustments and modifications, ensuring that we can tailor the design to meet
+            our evolving needs and integrate new components effectively.</p>
+
+          <h3>Data Display and Implementation</h3>
+          <p>In the final stage of our project, we will focus on displaying the collected data, including the amount of
+            electricity saved, the reduction in costs, and the overall impact of the project. This information will be
+            showcased on a dedicated webpage hosted on a personal server. The webpage will provide real-time insights
+            into the system’s performance, offering users a clear view of the benefits achieved through our
+            energy-saving measures. By presenting this data, we aim to demonstrate the effectiveness of our system and
+            its potential for broader application.</p>
+        </section>
+
+        <section class="sources">
+          <h2>Sources</h2>
+          <p>For further reading and information on the technologies and components used in our project, please refer to
+            the following sources:</p>
+          <ul>
+            <li><a href="Ultrasonic20Distance20Measurement20in20Automive20Applications.pdf" class="source-link"
+                target="_blank">Ultrasonic Sensor Documentation</a></li>
+            <li><a href="https://docs.arduino.cc/hardware/uno-rev3/" class="source-link" target="_blank">Arduino UNO
+                Official Site</a></li>
+            <li><a href="human detection using PIR sensor.pdf" class="source-link" target="_blank">PIR Sensor
+                Overview</a></li>
+            <li><a href="HUMAN-ACTIVITY-DETECTION-USING-MMWAVE-SENSOR.pdf" class="source-link" target="_blank">mmWave
+                Sensor Technical Details</a></li>
+            <li><a href="raspberry-pi,research.pdf" class="source-link" target="_blank"></a>Raspberry Pi 3 B
+              Specifications</a></li>
+            <li><a href="ESP32.pdf" class="source-link" target="_blank">ESP32 Modules Information</a></li>
+
+          </ul>
+        </section>
+
+        <section class="thanks">
+          <h2>Special Thanks</h2>
+          <p>We would like to extend our heartfelt gratitude to our professors, whose guidance and support have been
+            instrumental throughout this project. Their expertise, encouragement, and invaluable feedback have played a
+            crucial role in shaping our work and helping us navigate the challenges of this endeavor. We deeply
+            appreciate their dedication to our success and their commitment to fostering our growth as engineers.</p>
+        </section>
+
+        <section class="conclusion">
+          <h2>Conclusion</h2>
+          <p>Our journey from prototype to advanced development has been marked by thoughtful decision-making and
+            iterative improvements. By starting with a simple prototype and progressively incorporating advanced
+            technologies, we have laid the foundation for a sophisticated energy-efficient system. The combination of
+            innovative sensors, powerful microcontrollers, and flexible circuit boards positions us to achieve
+            significant energy savings and operational efficiencies. We are excited about the future developments and
+            the positive impact our project will have in the field of energy management.</p>
+        </section>
+      </article>
+    </div>
+  </section>
+
+  <section class="footer">
+    <footer>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTLGztqwwRsxFXdfqdfMxgqJgHdVbFBkclTgBzZqGNLHsSKCfzNxcXtZmwJWttdNLSGqdV"
+        target="_blank">Contact us</a>
+    </footer>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+/* General Styles */
+#body1{
+    background-color: rgb(190, 246, 155);
+}
+body {
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #137617;
+    color: white;
+}
+
+.logo {
+    height: 50px;
+    width: 175px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #45a049;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.maincontainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1300px;
+}
+
+.maincontainer h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.maincontainer p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Data Access Section */
+.dataAccess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+table {
+    margin-top: 20px;
+}
+
+td {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background color */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+/* Button Section Styling */
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.button-link {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #137617;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #137617;
+    transition: background-color 0.3s, color 0.3s;
+    min-width: 300px; /* Ensures minimum width */
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: white;
+    color: #137617;
+}
+
+/* Blank Space */
+.blankspace {
+    height: 100px;
+    background-color: transparent;
+}
+
+/* Footer */
+.footer {
+    margin-top:800px;
+    padding: 25px;
+    text-align: center;
+    background-color: #137617;
+    color: white;
+}
+
+.footer a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .maincontainer {
+        margin: 10px;
+    }
+}
+
+.map {
+    position: relative;
+}
+
+.mapimg {
+    position: absolute;
+    top: 50px;
+    left:550px;
+    max-width: 1150px;
+    max-height: 750px;
+ 
+}
+/* Popup Container */
+.popup {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Popup Fade-in and Fade-out Animations */
+.popup.fade-in {
+    opacity: 1;
+}
+
+/* When closing the popup */
+.popup.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Popup Content Styling */
+.popup-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Close Button in Popup */
+.close-popup {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #FF5733;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Graph Canvas Styling */
+#graph- {
+    margin-top: 10px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.Ledlight{
+    border: white;
+    position:absolute;
+    padding: 25px;
+    max-width: 30px;
+    max-height:30px;
+    transition: box-shadow 0.3s ease;
+}
+
+#led1{
+    margin-top:184px ;
+    margin-left: 669px;
+}
+
+#led2{
+    margin-top: 184px;
+    margin-left:863px;
+}
+#led3{
+    margin-top: 354px;
+    margin-left:670px;
+}
+#led4{
+    margin-top: 354px;
+    margin-left:862px;
+}
+#led5{
+    margin-top: 535px;
+    margin-left:670px;
+}
+#led6{
+    margin-top: 535px;
+    margin-left:860px;
+}
+
+
+
+
+#fan1{
+    margin-top: 150px;
+    margin-left:725px;
+}
+#fan2{
+    margin-top: 325px;
+    margin-left: 725px;
+}
+#fan3{
+    margin-top: 525px;
+    margin-left: 725px;
+}
+
+/* Fan image rotating animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fan {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    max-width: 120px;
+    padding: none;
+    max-height: 120px;
+    padding: 0;
+    cursor: pointer; /* Make the fan clickable */
+     transform-origin: center center !important;
+    transition: transform 3s ease;
+    /*transform-origin: center center !important;*/
+}
+
+/* Fan rotating with high speed */
+.rotate {
+    animation: rotate 1s linear infinite; /* High speed rotation (1s per rotation) */
+}
+
