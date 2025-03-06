@@ -33,6 +33,10 @@ body {
     transform: rotate(360deg);
   }
 }
+.leo {
+  background: rgb(255, 255, 255);
+  
+}
 .thunder {
   filter: drop-shadow(0 0 10px #00aaff) drop-shadow(0 0 20px #00ccff)
     drop-shadow(0 0 40px #0088ff);
