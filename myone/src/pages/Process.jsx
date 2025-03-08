@@ -77,11 +77,7 @@ const Process = () => {
               In our prototype, we used a standard breadboard for flexibility
               during the prototyping phase. This allowed us to easily modify and
               adjust our circuit design without permanent changes, facilitating
-              quick testing and iteration. For the next phase, we opted for a
-              general-purpose dotted circuit board to provide maximum
-              flexibility. This choice allows us to customize the layout and
-              connections based on the specific requirements of our components,
-              ensuring optimal performance and ease of troubleshooting.
+              quick testing and iteration. 
             </p>
           </motion.div>
           <motion.div className="timeline-middle" variants={iconVariants}>
@@ -135,15 +131,7 @@ const Process = () => {
               for initial testing, allowing us to validate our ideas without
               significant financial investment. For the next phase, we
               integrated PIR (Passive Infrared) and mmWave (millimeter-wave)
-              sensors. The mmWave sensors use radio waves to measure distances,
-              offering higher accuracy and the ability to detect motion without
-              requiring a direct line of sight. However, they are prone to false
-              positives, which can affect their reliability. On the other hand,
-              PIR sensors, while less accurate and requiring a line of sight,
-              have very low false positive rates. By combining these two
-              technologies, we aim to achieve a high level of accuracy in
-              detecting movement and occupancy, leveraging the strengths of each
-              sensor type to minimize their individual limitations.
+              sensors. 
             </p>
           </motion.div>
           <motion.hr className="bg-gray-700" variants={lineVariants} />
@@ -167,16 +155,7 @@ const Process = () => {
               We selected the Arduino UNO for its user-friendly coding
               environment and community support. Its straightforward programming
               interface allowed us to efficiently manage sensor data and control
-              components during prototyping. To manage the increased complexity
-              of our system, we upgraded to the Raspberry Pi 3 B. The Raspberry
-              Pi 3 B is capable of handling a large number of modules and
-              communicating with various microcontrollers and servers. Its
-              advanced processing power and versatility make it well-suited for
-              managing the more sophisticated requirements of our enhanced
-              system. Additionally, we plan to incorporate ESP32 modules for
-              server communication, providing robust connectivity and enabling
-              seamless data exchange between the system components and our
-              server infrastructure.
+              components during prototyping.
             </p>
           </motion.div>
           <motion.div className="timeline-middle" variants={iconVariants}>
@@ -228,15 +207,7 @@ const Process = () => {
               The prototype counts entries and exits using ultrasonic sensors
               placed at doorways. The Arduino UNO processes the data to toggle
               lights and fans based on occupancy, demonstrating the concept
-              effectively. In the next phase, we aim to integrate machine
-              learning algorithms to optimize energy usage based on historical
-              data and user behavior. Additionally, we plan to incorporate
-              cloud-based monitoring to enable remote control and real-time
-              analytics. These advancements will further enhance the system’s
-              efficiency and usability, making it suitable for a wide range of
-              applications. We also plan to conduct extensive field testing to
-              validate the system’s performance in real-world scenarios and
-              gather feedback for further improvements.
+              effectively.
             </p>
           </motion.div>
           <motion.hr className="bg-gray-700" variants={lineVariants} />
