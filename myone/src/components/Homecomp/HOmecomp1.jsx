@@ -6,7 +6,7 @@ import { GiElectric } from "react-icons/gi";
 
 const HOmecomp1 = () => {
   return (
-    <div className="h-[67vh] overflow-hidden  w-full relative bg-black flex flex-col lg:h-[80vh] items-center justify-between">
+    <div className="h-[67vh]  overflow-hidden  w-full relative bg-black flex flex-col lg:h-[80vh] items-center justify-between">
       <div className="absolute top-18 lg:top-0 flex flex-col lg:flex-row items-center justify-center">
         <img
           src={logo}
