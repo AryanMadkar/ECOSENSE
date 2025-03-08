@@ -2,7 +2,7 @@
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('../../public/toilet_room_gltf/toilet.gltf')
+  const { nodes, materials } = useGLTF('../toilet_room_gltf/toilet.gltf')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_4.geometry} material={materials.normal_} />
