@@ -5,9 +5,9 @@ import Model from "../../../public/school_building/Scene";
 
 const School = () => {
   return (
-    <div className="flex border-2 items-start justify-center flex-col h-[42vh] bg-black overflow-auto">
+    <div className=" overflow-hidden lg:h-[80vh] w-full h-[40vh] bg-black ">
       <Canvas
-        className="border-b-2"
+        className=""
         camera={{ position: [-30, 10, 27], fov: 70 }} // Moved camera back for better view
         style={{ touchAction: "none" }}
       >
